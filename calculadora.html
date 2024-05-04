@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Calculadora</title>
+    <style>
+        *{
+            margin: 0px;
+            text-align: center;
+            margin: auto;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgb(56, 49, 160);
+        }
+
+        #titulo{
+            margin: 50px;
+            font-size: 60px;
+        }
+
+        #resultado{
+            width: 270px;
+            border: 3px solid black;
+            padding: 15px 0px 15px 0px;
+            margin-bottom: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .bodycalculadora{
+            border: 3px solid black;
+            width: 300px;
+            padding: 50px;
+            background-color: rgb(71, 71, 71);
+        }
+
+        button{
+            width: 65px;
+            height: 50px;
+            margin: 3px 0px;
+            background-color: rgb(139, 138, 138);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Calculadora</h1>
+    <div class="bodycalculadora">
+        <input id="resultado" type="text" placeholder="Resultado"><br>
+        <button value="7" onclick="resultado.value +='7'">7</button>
+        <button value="8" onclick="resultado.value +='8'">8</button>
+        <button value="9" onclick="resultado.value +='9'">9</button>
+        <button id="operacoes" value="mais" onclick="resultado.value +='+'">+</button><br>
+        <button value="4" onclick="resultado.value +='4'">4</button>
+        <button value="5" onclick="resultado.value +='5'">5</button>
+        <button value="6" onclick="resultado.value +='6'">6</button>
+        <button id="operacoes" value="dividir" onclick="resultado.value +='/'">/</button><br>
+        <button value="1" onclick="resultado.value +='1'">1</button>
+        <button value="2" onclick="resultado.value +='2'">2</button>
+        <button value="3" onclick="resultado.value +='3'">3</button>
+        <button id="operacoes" value="menos" onclick="resultado.value +='-'">-</button><br>
+        <button value="0" onclick="resultado.value +='0'">0</button>
+        <button value="igual" onclick="resultado.value = eval(resultado.value)" style="width: 135px;">=</button>
+        <button value="vezes" onclick="resultado.value +='*'">*</button>
+        </div>
+</body>
+</html>
